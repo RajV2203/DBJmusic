@@ -21,7 +21,7 @@ function updateSongTimeDisplay() {
 
 async function getSongs(folder) {
     currFolder = folder;
-    const res = await fetch(`/songs/${folder}/`);
+    const res = await fetch(`/${folder}/`);
     const html = await res.text();
 
     const div = document.createElement("div");
