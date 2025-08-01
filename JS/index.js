@@ -80,7 +80,7 @@ function playMusic(track) {
 // -------------------- ALBUM FUNCTIONS --------------------
 
 async function displayAlbums() {
-    const res = await fetch("/songs/");
+    const res = await fetch("tree/main/songs/");
     const html = await res.text();
     const div = document.createElement("div");
     div.innerHTML = html;
