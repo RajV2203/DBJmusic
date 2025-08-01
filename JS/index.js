@@ -21,7 +21,7 @@ function updateSongTimeDisplay() {
 
 async function getSongs(folder) {
     currFolder = folder;
-    const res = await fetch(`/songs/${folder}`);
+    const res = await fetch(`songs/${folder}/`);
     const html = await res.text();
 
     const div = document.createElement("div");
@@ -68,7 +68,7 @@ function displaySongList() {
 function playMusic(track) {
     const playBtn = document.getElementById("play");
     currentSong.pause();
-    currentSong.src = `/songs/${currFolder}/${track}`;
+    currentSong.src = `songs/${currFolder}/${track}`;
     currentSong.play().then(() => {
         playBtn.src = "img/pause.svg";
     }).catch(err => console.error("Playback error:", err));
@@ -80,7 +80,7 @@ function playMusic(track) {
 // -------------------- ALBUM FUNCTIONS --------------------
 
 async function displayAlbums() {
-    const res = await fetch("songs/cs");
+    const res = await fetch("songs/");
     const html = await res.text();
     const div = document.createElement("div");
     div.innerHTML = html;
@@ -96,7 +96,7 @@ async function displayAlbums() {
                 const meta = await metaRes.json();
 
                 cardContainer.innerHTML += `
-                    <div data-folder="/songs/${folder}" class="card">
+                    <div data-folder="songs/${folder}" class="card">
                         <div class="play">
                             <img src="img/playButton.svg" alt="playButton">
                         </div>
