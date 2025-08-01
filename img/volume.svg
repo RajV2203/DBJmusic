@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+  <!-- Speaker base -->
+  <path d="M3 9v6h4l5 5V4L7 9H3z" />
+  <!-- Sound waves -->
+  <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03z"/>
+  <path d="M14 3.23v2.06c3.39 1.01 6 4.13 6 7.71s-2.61 6.7-6 7.71v2.06c4.45-1.18 8-5.21 8-9.77s-3.55-8.59-8-9.77z"/>
+</svg>

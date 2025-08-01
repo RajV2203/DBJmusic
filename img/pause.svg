@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <!-- Green circular background -->
+  <circle cx="12" cy="12" r="12" fill="#1DB954" />
+
+  <!-- Pause icon (two vertical bars) -->
+  <rect x="8" y="7" width="2.5" height="10" fill="black" />
+  <rect x="13.5" y="7" width="2.5" height="10" fill="black" />
+</svg>
